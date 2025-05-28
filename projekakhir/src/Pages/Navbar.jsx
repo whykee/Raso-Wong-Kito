@@ -1,5 +1,6 @@
 import { FiCoffee } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,64 +45,48 @@ function Navbar() {
                 }`}
               >
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/"
                     className={`hover:underline transition-colors duration-100 ${
                       isScrolled
                         ? "hover:text-orange-600"
                         : "hover:text-yellow-300"
                     }`}
                   >
-                    Blog
-                  </a>
+                    Beranda
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/kuliner"
                     className={`hover:underline transition-colors duration-100 ${
                       isScrolled
                         ? "hover:text-orange-600"
                         : "hover:text-yellow-300"
                     }`}
                   >
-                    Homepage
-                  </a>
+                    Kuliner
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/tentang"
                     className={`hover:underline transition-colors duration-100 ${
                       isScrolled
                         ? "hover:text-orange-600"
                         : "hover:text-yellow-300"
                     }`}
                   >
-                    Store
-                  </a>
+                    Tentang Kami
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/kontak"
                     className={`hover:underline transition-colors duration-100 ${
                       isScrolled
                         ? "hover:text-orange-600"
                         : "hover:text-yellow-300"
                     }`}
                   >
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className={`hover:underline transition-colors duration-100 ${
-                      isScrolled
-                        ? "hover:text-orange-600"
-                        : "hover:text-yellow-300"
-                    }`}
-                  >
-                    About
-                  </a>
+                    Kontak
+                  </Link>
                 </li>
               </ul>
             </div>
