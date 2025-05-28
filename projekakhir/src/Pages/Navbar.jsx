@@ -1,5 +1,6 @@
 import { FiCoffee } from "react-icons/fi";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
