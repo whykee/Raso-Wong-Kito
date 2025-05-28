@@ -22,9 +22,11 @@ function Navbar() {
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-white text-black shadow-lg"
-          : "bg-transparent text-white"
+            : "bg-transparent text-white"
         }`}
       >
+        <div className="absolute left-6 top-6">
+        </div>
         {/* Main navbar content */}
         <div
           className={`p-6 flex justify-between items-center font-medium transition-colors duration-300 ${
@@ -111,16 +113,12 @@ function Navbar() {
               className={`transition-colors duration-100 ${
                 isScrolled ? "hover:text-orange-600" : "hover:text-yellow-300"
               }`}
-            >
-              
-            </button>
+            ></button>
             <button
               className={`transition-colors duration-100 ${
                 isScrolled ? "hover:text-orange-600" : "hover:text-yellow-300"
               }`}
-            >
-              
-            </button>
+            ></button>
           </div>
         </div>
       </nav>
