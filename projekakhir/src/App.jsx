@@ -5,6 +5,7 @@ function App() {
   return (
     <>
     <h1>masuk kah?</h1>
+    <p>ya</p>
     <Home/>
     </>
   );
