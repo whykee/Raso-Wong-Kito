@@ -21,7 +21,7 @@ function HeroSection() {
         className="hero h-[730px]"
         style={{
           backgroundImage:
-            "url(https://bams.jambiprov.go.id/wp-content/uploads/2023/10/Jembatan-Ampera.png)",
+            "url('/kuliner.jpg')",
         }}
       >
         <div className="hero-overlay"></div>
