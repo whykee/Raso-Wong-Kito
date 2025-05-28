@@ -25,18 +25,30 @@ function Navbar() {
             : "bg-transparent text-white"
         }`}
       >
-        <div className="absolute left-6 top-6">
-        </div>
         {/* Main navbar content */}
         <div
-          className={`p-6 flex justify-between items-center font-medium transition-colors duration-300 ${
+          className={`${
+            isScrolled ? "py-2" : "py-6"
+          } flex justify-between items-center font-medium transition-all duration-300 ${
             isScrolled ? "text-black" : "text-white"
           }`}
         >
           {/* Brand */}
           <div className="text-center w-full">
-            <h1 className="text-2xl font-bold">RASO WONG KITO</h1>
-            <p className="text-xs">Macam-Macam Kuliner Kota Palembang</p>
+            <h1
+              className={`font-bold transition-all duration-300 ${
+                isScrolled ? "text-xl" : "text-2xl"
+              }`}
+            >
+              RASO WONG KITO
+            </h1>
+            <p
+              className={`transition-all duration-300 ${
+                isScrolled ? "text-[10px]" : "text-xs"
+              }`}
+            >
+              Macam-Macam Kuliner Kota Palembang
+            </p>
             <div className={`w-full flex justify-center pb-4`}>
               <ul
                 className={`flex space-x-6 text-sm pt-5 transition-colors duration-300 ${
@@ -46,79 +58,37 @@ function Navbar() {
                 <li>
                   <a
                     href="#"
-                    className={`hover:underline transition-colors duration-100 ${
-                      isScrolled
-                        ? "hover:text-orange-600"
-                        : "hover:text-yellow-300"
-                    }`}
+                    className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
-                    Blog
+                    Beranda
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className={`hover:underline transition-colors duration-100 ${
-                      isScrolled
-                        ? "hover:text-orange-600"
-                        : "hover:text-yellow-300"
-                    }`}
+                    className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
-                    Homepage
+                    Tentang Kami
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className={`hover:underline transition-colors duration-100 ${
-                      isScrolled
-                        ? "hover:text-orange-600"
-                        : "hover:text-yellow-300"
-                    }`}
+                    className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
-                    Store
+                    Kuliner
                   </a>
                 </li>
                 <li>
                   <a
                     href="#"
-                    className={`hover:underline transition-colors duration-100 ${
-                      isScrolled
-                        ? "hover:text-orange-600"
-                        : "hover:text-yellow-300"
-                    }`}
+                    className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
-                    Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className={`hover:underline transition-colors duration-100 ${
-                      isScrolled
-                        ? "hover:text-orange-600"
-                        : "hover:text-yellow-300"
-                    }`}
-                  >
-                    About
+                    Kontak
                   </a>
                 </li>
               </ul>
             </div>
-          </div>
-
-          {/* Icons */}
-          <div className="absolute right-6 top-6 flex space-x-4">
-            <button
-              className={`transition-colors duration-100 ${
-                isScrolled ? "hover:text-orange-600" : "hover:text-yellow-300"
-              }`}
-            ></button>
-            <button
-              className={`transition-colors duration-100 ${
-                isScrolled ? "hover:text-orange-600" : "hover:text-yellow-300"
-              }`}
-            ></button>
           </div>
         </div>
       </nav>
