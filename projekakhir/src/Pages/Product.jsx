@@ -52,7 +52,7 @@ function SectionProduct1() {
         </h2>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 max-w-6xl mx-auto px-4 ">
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/pempek.jpg"
               alt="Pempek"
@@ -73,7 +73,7 @@ function SectionProduct1() {
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/tekwan.jpg"
               alt="Tekwan"
@@ -95,7 +95,7 @@ function SectionProduct1() {
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/mie celor.jpg"
               alt="Mie Celor"
@@ -116,7 +116,7 @@ function SectionProduct1() {
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/laksan.jpg"
               alt="Laksan"
@@ -138,7 +138,7 @@ function SectionProduct1() {
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/pindang.jpg"
               alt="Pindang Patin"
@@ -159,7 +159,7 @@ function SectionProduct1() {
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/burgo.jpg"
               alt="Burgo"
@@ -180,7 +180,7 @@ function SectionProduct1() {
               </a>
             </div>
           </div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/kojo.jpg"
               alt="Bolu Kojo"
@@ -200,7 +200,7 @@ function SectionProduct1() {
               </a>
             </div>
           </div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/martabak.jpg"
               alt="Martabak Kari"
@@ -221,7 +221,7 @@ function SectionProduct1() {
               </a>
             </div>
           </div>
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/tempoyak.jpg"
               alt="Pindang Patin"
@@ -242,7 +242,7 @@ function SectionProduct1() {
             </div>
           </div>
 
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/kemplang.jpg"
               alt="Kemplang Ikan"
@@ -278,7 +278,7 @@ function SectionProduct2() {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/es kacang.jpg"
               alt="Es Kacang Merah"
@@ -304,7 +304,7 @@ function SectionProduct2() {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/es jagung.jpg"
               alt="Es Jagung"
@@ -327,7 +327,7 @@ function SectionProduct2() {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/es sugus.jpg"
               alt="Es Sugus"
@@ -351,7 +351,7 @@ function SectionProduct2() {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/sop durian.jpg"
               alt="Sop Durian"
@@ -375,7 +375,7 @@ function SectionProduct2() {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/teh secang.jpg"
               alt="Teh Secang"
@@ -399,7 +399,7 @@ function SectionProduct2() {
             </div>
           </div>
 
-          <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl">
+          <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
             <img
               src="/menu/teh selasih pandan.jpg"
               alt="Teh Selasih Pandan"
