@@ -57,36 +57,32 @@ function Navbar() {
                 }`}
               >
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/"
                     className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
                     Beranda
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/tentang"
                     className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
                     Tentang Kami
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/kuliner"
                     className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
                     Kuliner
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link to="/kontak"
                     className={`hover:text-yellow-400 transition-colors duration-100`}
                   >
                     Kontak
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
