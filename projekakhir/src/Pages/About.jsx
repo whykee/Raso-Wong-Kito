@@ -126,14 +126,13 @@ function MisiSection() {
       <div className="hero-content flex-col lg:flex-row items-center gap-x-8">
         {/* Gambar */}
         <img
-          src="https://bams.jambiprov.go.id/wp-content/uploads/2023/10/Jembatan-Ampera-1.png"
-          alt="Jembatan Ampera"
+          src="https://t4.ftcdn.net/jpg/02/99/09/05/360_F_299090527_n2chCeSRhq9BJMRoHUZxFDRmZmWJKNwy.jpg"
           className="w-xl rounded-lg shadow-2xl"
         />
 
         {/* Teks kutipan */}
         <div className="max-w-xl text-center lg:text-left pr-6">
-          <p className="font-bold text-red-800 text-lg mt-4 text-center">
+          <p className="font-bold text-red-800 text-2xl mt-4 text-center">
             — Misi Raso Wong Kito —
           </p>
           <p className="text-xl font-semibold text-gray-700 text-justify">

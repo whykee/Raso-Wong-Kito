@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function HeroSection() {
       <div
         className="hero h-[760px]"
         style={{
-          backgroundImage: "url('/kuliner.jpg')",
+          backgroundImage: "url('/home.jpg')",
         }}
       >
         <div className="hero-overlay"></div>
@@ -36,10 +37,12 @@ function HeroSection() {
               Temukan cita rasa khas dari Kota Palembang yang menggoda selera,
               hanya di sini!
             </p>
-            <button className="btn bg-yellow-400 text-black shadow-none rounded-2xl hover:bg-red-800 hover:text-white">
-              Jelajahi Kuliner
-              <IoIosArrowForward />{" "}
-            </button>
+            <Link to="/kuliner">
+              <button className="btn bg-yellow-400 text-black shadow-none rounded-2xl hover:bg-red-800 hover:text-white">
+                Jelajahi Kuliner
+                <IoIosArrowForward />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
