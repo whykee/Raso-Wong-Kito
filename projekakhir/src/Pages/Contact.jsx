@@ -25,7 +25,7 @@ function HeroContact() {
       >
         <div className="hero-overlay"></div>
         <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
+          <div className="max-w-xl">
             <h1 className="mb-5 text-5xl font-bold">Hubungi Kami</h1>
             <p className="mb-5 text-xl font-semibold">
               Punya pertanyaan, saran, atau ingin memesan langsung? Kami siap

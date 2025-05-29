@@ -154,14 +154,14 @@ function Section3() {
 function Section4() {
   return (
     <div className="my-10 text-center px-4 mt-20">
-      <h1 className="text-3xl font-bold mb-6">Apa Kata Mereka?</h1>
+      <h1 className="text-3xl font-bold mb-10">Apa Kata Mereka?</h1>
 
       {/* Carousel wrapper */}
       <div className="carousel w-full max-w-5xl h-64 mx-auto rounded-lg shadow-lg">
         {/* Slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="\1.png"
+            src="/testimoni/1.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 1"
           />
@@ -184,7 +184,7 @@ function Section4() {
         {/* Slide 2 */}
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="\2.png"
+            src="/testimoni/2.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 2"
           />
@@ -207,7 +207,7 @@ function Section4() {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="\3.png"
+            src="/testimoni/3.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 3"
           />
@@ -230,7 +230,7 @@ function Section4() {
         {/* Slide 4 */}
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="\4.png"
+            src="/testimoni/4.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 4"
           />

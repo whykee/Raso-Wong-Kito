@@ -33,7 +33,7 @@ function HeroProduct() {
               Lezatnya Kuliner Wong Kito
             </h1>
             <p className="mb-5 text-xl font-semibold">
-              Cita rasa khas Palembang yang menggoda selera—temukan makanan
+              Cita rasa khas Palembang yang menggoda selera temukan makanan
               favoritmu dan kenali keunikan setiap hidangan!
             </p>
           </div>
