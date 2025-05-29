@@ -86,8 +86,8 @@ function Section3() {
         <h1 className="text-3xl font-bold mb-2">Kenapa Harus Kami?</h1>
         <p className="text-gray-600 text-lg mx-auto w-160">
           Kami bertekad membawa kekayaan kuliner Palembang yang legendaris ke
-          seluruh penjuru nusantara bahkan ke mancanegara, dengan menghadirkan
-          cita rasa autentik yang menggugah selera dan kenangan.
+          seluruh penjuru Indonesia, menghadirkan cita rasa autentik yang
+          menggugah selera dan membangkitkan kenangan.
         </p>
       </div>
 
@@ -138,10 +138,11 @@ function Section3() {
             />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Berbasis Lokal dan Berkelanjutan</h2>
+            <h2 className="card-title">Dipercaya Banyak Orang</h2>
             <p>
-              Kolaborasi dengan UMKM lokal menjaga keberlanjutan lingkungan dan
-              melestarikan cita rasa asli.
+              Banyak pelanggan telah membuktikan kualitas dan rasa produk kami.
+              Testimoni mereka menjadi dorongan untuk terus menjaga keaslian
+              cita rasa Palembang.
             </p>
           </div>
         </div>
@@ -160,7 +161,7 @@ function Section4() {
         {/* Slide 1 */}
         <div id="slide1" className="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+            src="\1.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 1"
           />
@@ -183,7 +184,7 @@ function Section4() {
         {/* Slide 2 */}
         <div id="slide2" className="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            src="\2.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 2"
           />
@@ -206,7 +207,7 @@ function Section4() {
         {/* Slide 3 */}
         <div id="slide3" className="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            src="\3.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 3"
           />
@@ -229,7 +230,7 @@ function Section4() {
         {/* Slide 4 */}
         <div id="slide4" className="carousel-item relative w-full">
           <img
-            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            src="\4.png"
             className="w-full h-64 object-cover rounded-lg"
             alt="Slide 4"
           />
