@@ -59,7 +59,9 @@ function Footer() {
             </a>
           </div>
         </nav>
-        <p>Copyright © {new Date().getFullYear()} -  Semua hak cipta dilindungi.</p>
+        <p>
+          Copyright © {new Date().getFullYear()} - Semua hak cipta dilindungi.
+        </p>
       </footer>
     </>
   );
