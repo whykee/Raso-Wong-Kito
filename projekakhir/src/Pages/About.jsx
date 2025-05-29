@@ -56,25 +56,25 @@ function SejarahSection() {
         <div className="tabs tabs-boxed justify-center mb-6 font-bold">
           <a
             href="#tahun2024"
-            className="tab tab-active text-black hover:text-yellow-400 transition-colors duration-300"
+            className="tab tab-active text-black hover:text-yellow-400 transition-colors duration-300 text-xl"
           >
             2024
           </a>
           <a
             href="#tahun2025"
-            className="tab tab-active text-black hover:text-yellow-400 transition-colors duration-300"
+            className="tab tab-active text-black hover:text-yellow-400 transition-colors duration-300 text-xl"
           >
             2025
           </a>
         </div>
 
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-195 mx-auto">
           <div id="tahun2024" className="tab-content">
             <img
               src="/gif/an1.gif"
               className="mx-auto rounded-lg shadow-2xl w-120 border-2 border-yellow-400"
             />
-            <p className="text-gray-700 text-sm mt-10">
+            <p className="text-gray-700 text-md mt-10">
               Pada tahun 2024, kami berempat memulai perjalanan Raso Wong Kito
               dengan tujuan memperkenalkan kuliner khas Palembang ke khalayak
               yang lebih luas. Awalnya, kami hanya mengandalkan resep
@@ -90,7 +90,7 @@ function SejarahSection() {
               src="/gif/an2.gif"
               className="mx-auto rounded-lg shadow-2xl w-120 border-2 border-red-800"
             />
-            <p className="text-gray-700 text-sm mt-10">
+            <p className="text-gray-700 text-md mt-10">
               Memasuki tahun 2025, Raso Wong Kito mulai dikenal dan dipercaya
               oleh pelanggan dari luar Palembang. Berkat konsistensi kami
               menjaga kualitas dan inovasi dalam penyajian, semakin banyak orang
