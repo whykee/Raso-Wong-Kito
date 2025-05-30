@@ -8,6 +8,8 @@ import Contact from "./Pages/Contact";
 function App() {
   return (
     <>
+
+    <h1>COBA</h1>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
