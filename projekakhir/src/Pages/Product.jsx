@@ -66,6 +66,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -88,6 +89,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -109,6 +111,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -131,6 +134,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -152,6 +156,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -174,6 +179,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -194,6 +200,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -215,6 +222,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -235,6 +243,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -257,6 +266,7 @@ function SectionProduct1() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -297,6 +307,7 @@ function SectionProduct2() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -320,6 +331,7 @@ function SectionProduct2() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -344,6 +356,7 @@ function SectionProduct2() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -368,6 +381,7 @@ function SectionProduct2() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -392,6 +406,7 @@ function SectionProduct2() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
@@ -418,6 +433,7 @@ function SectionProduct2() {
               </p>
               <a
                 href="https://wa.me/6283157241563?&text=Permisi,Kak,Mau,Order"
+                target="blank"
                 class="mt-4 inline-block px-4 py-2 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
               >
                 Beli Sekarang
