@@ -47,7 +47,7 @@ function HeroContact() {
 function ContactSection() {
   return (
     <>
-      <section className="py-20 bg-white text-gray-800">
+      <section className="py-20 bg-base-200 text-gray-800">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
