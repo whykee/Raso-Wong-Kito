@@ -122,6 +122,8 @@ function SejarahSection() {
 
 function MisiSection() {
   return (
+    <>
+    <div className="container mx-auto px-4">
     <div className="hero bg-base-200 h-[80vh]">
       <div className="hero-content flex-col lg:flex-row items-center gap-x-8">
         {/* Gambar */}
@@ -151,6 +153,8 @@ function MisiSection() {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 }
 

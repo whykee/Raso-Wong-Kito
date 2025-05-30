@@ -7,16 +7,13 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <>
       <nav
@@ -26,15 +23,11 @@ function Navbar() {
             : "bg-transparent text-white"
         }`}
       >
-        {/* Main navbar content */}
         <div
           className={`${
             isScrolled ? "py-2" : "py-6"
-          } flex justify-between items-center font-medium transition-all duration-300 ${
-            isScrolled ? "text-black" : "text-white"
-          }`}
+          } font-medium transition-all duration-300`}
         >
-          {/* Brand */}
           <div className="text-center w-full">
             <h1
               className={`font-bold transition-all duration-300 ${
@@ -50,37 +43,61 @@ function Navbar() {
             >
               Macam-Macam Kuliner Kota Palembang
             </p>
-            <div className={`w-full flex justify-center pb-4`}>
+
+            {/* Mobile Navigation */}
+            <div className="flex justify-center lg:hidden">
               <ul
                 className={`flex space-x-6 text-sm pt-5 transition-colors duration-300 ${
                   isScrolled ? "text-black" : "text-white"
                 }`}
               >
                 <li>
-                  <Link to="/"
-                    className={`hover:text-yellow-400 transition-colors duration-100`}
-                  >
+                  <Link to="/" className="hover:text-yellow-400 transition-colors duration-100">
                     Beranda
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tentang"
-                    className={`hover:text-yellow-400 transition-colors duration-100`}
-                  >
+                  <Link to="/tentang" className="hover:text-yellow-400 transition-colors duration-100">
                     Tentang Kami
                   </Link>
                 </li>
                 <li>
-                  <Link to="/kuliner"
-                    className={`hover:text-yellow-400 transition-colors duration-100`}
-                  >
+                  <Link to="/kuliner" className="hover:text-yellow-400 transition-colors duration-100">
                     Kuliner
                   </Link>
                 </li>
                 <li>
-                  <Link to="/kontak"
-                    className={`hover:text-yellow-400 transition-colors duration-100`}
-                  >
+                  <Link to="/kontak" className="hover:text-yellow-400 transition-colors duration-100">
+                    Kontak
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex justify-center">
+              <ul
+                className={`flex space-x-6 text-sm pt-5 transition-colors duration-300 ${
+                  isScrolled ? "text-black" : "text-white"
+                }`}
+              >
+                <li>
+                  <Link to="/" className="hover:text-yellow-400 transition-colors duration-100">
+                    Beranda
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/tentang" className="hover:text-yellow-400 transition-colors duration-100">
+                    Tentang Kami
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/kuliner" className="hover:text-yellow-400 transition-colors duration-100">
+                    Kuliner
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/kontak" className="hover:text-yellow-400 transition-colors duration-100">
                     Kontak
                   </Link>
                 </li>

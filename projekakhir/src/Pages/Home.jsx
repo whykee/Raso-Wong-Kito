@@ -85,68 +85,70 @@ function Section2() {
 function Section3() {
   return (
     <>
-      <div className="text-center my-10 mt-20">
-        <h1 className="text-3xl font-bold mb-2">Kenapa Harus Kami?</h1>
-        <p className="text-gray-600 text-lg mx-auto w-160">
-          Kami bertekad membawa kekayaan kuliner Palembang yang legendaris ke
-          seluruh penjuru Indonesia, menghadirkan cita rasa autentik yang
-          menggugah selera dan membangkitkan kenangan.
-        </p>
-      </div>
-
-      <div className="flex flex-wrap justify-center gap-8 px-4">
-        {/* Card 1 */}
-        <div className="card bg-base-100 w-80 shadow-md border border-gray-100 rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-          <figure className="p-4">
-            <img
-              src="https://i.pinimg.com/736x/55/ee/c4/55eec412da158bf3c5ea773a9715791e.jpg"
-              alt="Global Reach"
-              className="rounded-xl h-48 object-cover"
-            />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title">Jangkauan Nasional</h2>
-            <p>
-              Dari Palembang ke seluruh Indonesia, kami menghadirkan cita rasa
-              khas dengan pengiriman cepat dan terpercaya.
-            </p>
-          </div>
+      <div className="container mx-auto px-4">
+        <div className="text-center my-10 mt-20">
+          <h1 className="text-3xl font-bold mb-2">Kenapa Harus Kami?</h1>
+          <p className="text-gray-600 text-lg mx-auto w-160">
+            Kami bertekad membawa kekayaan kuliner Palembang yang legendaris ke
+            seluruh penjuru Indonesia, menghadirkan cita rasa autentik yang
+            menggugah selera dan membangkitkan kenangan.
+          </p>
         </div>
 
-        {/* Card 2 */}
-        <div className="card bg-base-100 w-80 shadow-md border border-gray-100 rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-          <figure className="p-4">
-            <img
-              src="https://i.pinimg.com/736x/41/b2/a8/41b2a8fa086538cad0cce2a9f0afcfc6.jpg"
-              alt="Quality Assurance"
-              className="rounded-xl h-48 object-cover"
-            />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title">Kualitas Terjamin</h2>
-            <p>
-              Bahan pilihan dan proses higienis memastikan setiap gigitan tetap
-              otentik dan berkualitas tinggi.
-            </p>
+        <div className="flex flex-wrap justify-center gap-8 px-4">
+          {/* Card 1 */}
+          <div className="card bg-base-100 w-80 shadow-md border border-gray-100 rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+            <figure className="p-4">
+              <img
+                src="https://i.pinimg.com/736x/55/ee/c4/55eec412da158bf3c5ea773a9715791e.jpg"
+                alt="Global Reach"
+                className="rounded-xl h-48 object-cover"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Jangkauan Nasional</h2>
+              <p>
+                Dari Palembang ke seluruh Indonesia, kami menghadirkan cita rasa
+                khas dengan pengiriman cepat dan terpercaya.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* Card 3 */}
-        <div className="card bg-base-100 w-80 shadow-md border border-gray-100 rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
-          <figure className="p-4">
-            <img
-              src="https://i.pinimg.com/736x/00/3d/d0/003dd07235aff66e23c4c3218706b156.jpg"
-              alt="Sustainability"
-              className="rounded-xl h-48 object-cover"
-            />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title">Dipercaya Banyak Orang</h2>
-            <p>
-              Banyak pelanggan telah membuktikan kualitas dan rasa produk kami.
-              Testimoni mereka menjadi dorongan untuk terus menjaga keaslian
-              cita rasa Palembang.
-            </p>
+          {/* Card 2 */}
+          <div className="card bg-base-100 w-80 shadow-md border border-gray-100 rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+            <figure className="p-4">
+              <img
+                src="https://i.pinimg.com/736x/41/b2/a8/41b2a8fa086538cad0cce2a9f0afcfc6.jpg"
+                alt="Quality Assurance"
+                className="rounded-xl h-48 object-cover"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Kualitas Terjamin</h2>
+              <p>
+                Bahan pilihan dan proses higienis memastikan setiap gigitan
+                tetap otentik dan berkualitas tinggi.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div className="card bg-base-100 w-80 shadow-md border border-gray-100 rounded-xl transition-transform duration-300 hover:shadow-xl hover:-translate-y-2">
+            <figure className="p-4">
+              <img
+                src="https://i.pinimg.com/736x/00/3d/d0/003dd07235aff66e23c4c3218706b156.jpg"
+                alt="Sustainability"
+                className="rounded-xl h-48 object-cover"
+              />
+            </figure>
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">Dipercaya Banyak Orang</h2>
+              <p>
+                Banyak pelanggan telah membuktikan kualitas dan rasa produk
+                kami. Testimoni mereka menjadi dorongan untuk terus menjaga
+                keaslian cita rasa Palembang.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -163,12 +165,22 @@ function Section4() {
       <div className="carousel w-full max-w-5xl h-64 mx-auto rounded-lg shadow-lg">
         {/* Slide 1 */}
         <div id="slide1" tabIndex={0} className="carousel-item relative w-full">
-          <img src="/testimoni/1.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 1" />
+          <img
+            src="/testimoni/1.png"
+            className="w-full h-64 object-cover rounded-lg"
+            alt="Slide 1"
+          />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <button onClick={() => document.getElementById("slide4").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide4").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❮
             </button>
-            <button onClick={() => document.getElementById("slide2").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide2").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❯
             </button>
           </div>
@@ -176,12 +188,22 @@ function Section4() {
 
         {/* Slide 2 */}
         <div id="slide2" tabIndex={0} className="carousel-item relative w-full">
-          <img src="/testimoni/2.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 2" />
+          <img
+            src="/testimoni/2.png"
+            className="w-full h-64 object-cover rounded-lg"
+            alt="Slide 2"
+          />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <button onClick={() => document.getElementById("slide1").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide1").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❮
             </button>
-            <button onClick={() => document.getElementById("slide3").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide3").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❯
             </button>
           </div>
@@ -189,12 +211,22 @@ function Section4() {
 
         {/* Slide 3 */}
         <div id="slide3" tabIndex={0} className="carousel-item relative w-full">
-          <img src="/testimoni/3.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 3" />
+          <img
+            src="/testimoni/3.png"
+            className="w-full h-64 object-cover rounded-lg"
+            alt="Slide 3"
+          />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <button onClick={() => document.getElementById("slide2").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide2").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❮
             </button>
-            <button onClick={() => document.getElementById("slide4").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide4").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❯
             </button>
           </div>
@@ -202,12 +234,22 @@ function Section4() {
 
         {/* Slide 4 */}
         <div id="slide4" tabIndex={0} className="carousel-item relative w-full">
-          <img src="/testimoni/4.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 4" />
+          <img
+            src="/testimoni/4.png"
+            className="w-full h-64 object-cover rounded-lg"
+            alt="Slide 4"
+          />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <button onClick={() => document.getElementById("slide3").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide3").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❮
             </button>
-            <button onClick={() => document.getElementById("slide1").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
+            <button
+              onClick={() => document.getElementById("slide1").focus()}
+              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
+            >
               ❯
             </button>
           </div>
