@@ -133,7 +133,7 @@ function MisiSection() {
         {/* Teks kutipan */}
         <div className="max-w-xl text-center lg:text-left pr-6">
           <p className="font-bold text-red-800 text-2xl mt-4 text-center">
-            — Misi Raso Wong Kito —
+            — Visi Raso Wong Kito —
           </p>
           <p className="text-xl font-semibold text-gray-700 text-justify">
             <span>
@@ -160,7 +160,7 @@ function VisiSection() {
       <div className="max-w-screen-lg mx-auto px-4 md:px-8 mt-15 mb-15">
         <div className="text-center mb-12">
           <h1 className="text-3xl font-bold text-red-800 mb-4">
-            — Visi Raso Wong Kito —
+            — Misi Raso Wong Kito —
           </h1>
           <p className="text-gray-600 text-lg mx-auto w-160">
             Menjadi pelopor kuliner khas Palembang yang dikenal luas di seluruh
