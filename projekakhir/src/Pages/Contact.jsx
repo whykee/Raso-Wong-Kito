@@ -8,6 +8,8 @@ import React, { useState } from "react";
 import { db } from "../Firebase";
 import { collection, addDoc } from "firebase/firestore";
 
+import Swal from "sweetalert2";
+
 function Contact() {
   return (
     <>
@@ -68,7 +70,11 @@ function ContactSection() {
     try {
       // Simpan data ke Firestore
       await addDoc(collection(db, "contacts"), formData);
-      alert("Pesan berhasil dikirim!");
+      Swal.fire({
+        title: "Sukses!",
+        text: "Terima Kasih Pesannya!",
+        icon: "success",
+      });
       setFormData({ name: "", email: "", subjek: "", message: "" }); // Reset form
     } catch (error) {
       console.error("Error submitting form: ", error);
@@ -93,7 +99,10 @@ function ContactSection() {
                 <span className="mr-3">
                   <MdOutlineMail />
                 </span>
-                <a target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=Raso_WongKito@gmail.com">
+                <a
+                  target="blank"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=Raso_WongKito@gmail.com"
+                >
                   Raso_WongKito@gmail.com
                 </a>
               </li>
@@ -101,7 +110,10 @@ function ContactSection() {
                 <span className="mr-3">
                   <FaFacebook />
                 </span>
-                <a target="blank" href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#">
+                <a
+                  target="blank"
+                  href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#"
+                >
                   Raso WongKito
                 </a>
               </li>
@@ -114,11 +126,7 @@ function ContactSection() {
             </ul>
 
             <div className="mt-6 ml-2">
-              <img
-                src="/qr.jpeg"
-                alt="QR Code"
-                className="w-50 rounded-md"
-              />
+              <img src="/qr.jpeg" alt="QR Code" className="w-50 rounded-md" />
             </div>
           </div>
 
