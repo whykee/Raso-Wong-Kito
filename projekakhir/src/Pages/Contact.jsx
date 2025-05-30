@@ -78,7 +78,7 @@ function ContactSection() {
 
   return (
     <>
-      <section className="py-20 bg-white text-gray-800">
+      <section className="py-20 bg-base-200 text-gray-800">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
             <h2 className="text-3xl font-bold mb-6 text-gray-900">
@@ -93,7 +93,7 @@ function ContactSection() {
                 <span className="mr-3">
                   <MdOutlineMail />
                 </span>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Raso_WongKito@gmail.com">
+                <a target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=Raso_WongKito@gmail.com">
                   Raso_WongKito@gmail.com
                 </a>
               </li>
@@ -101,7 +101,7 @@ function ContactSection() {
                 <span className="mr-3">
                   <FaFacebook />
                 </span>
-                <a href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#">
+                <a target="blank" href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#">
                   Raso WongKito
                 </a>
               </li>
