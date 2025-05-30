@@ -123,37 +123,35 @@ function SejarahSection() {
 function MisiSection() {
   return (
     <>
-    <div className="container mx-auto px-4">
-    <div className="hero bg-base-200 h-[80vh]">
-      <div className="hero-content flex-col lg:flex-row items-center gap-x-8">
-        {/* Gambar */}
-        <img
-          src="https://t4.ftcdn.net/jpg/02/99/09/05/360_F_299090527_n2chCeSRhq9BJMRoHUZxFDRmZmWJKNwy.jpg"
-          className="w-xl rounded-lg shadow-2xl"
-        />
+      <div className="hero bg-base-200 h-[80vh]">
+        <div className="hero-content flex-col lg:flex-row items-center gap-x-8">
+          {/* Gambar */}
+          <img
+            src="https://t4.ftcdn.net/jpg/02/99/09/05/360_F_299090527_n2chCeSRhq9BJMRoHUZxFDRmZmWJKNwy.jpg"
+            className="w-xl rounded-lg shadow-2xl"
+          />
 
-        {/* Teks kutipan */}
-        <div className="max-w-xl text-center lg:text-left pr-6">
-          <p className="font-bold text-red-800 text-2xl mt-4 text-center">
-            — Visi Raso Wong Kito —
-          </p>
-          <p className="text-xl font-semibold text-gray-700 text-justify">
-            <span>
-              <ImQuotesLeft className="text-red-800 text-2xl mb-6" />
-              Menghadirkan kuliner khas Palembang yang otentik, berkualitas,
-              sehat, dan penuh cinta. Raso Wong Kito lahir dari kepedulian kami
-              terhadap budaya lokal dan semangat untuk mengenalkannya ke
-              nusantara. Bukan sekadar usaha, ini adalah wujud cinta kami untuk
-              rasa, keluarga, dan masa depan yang tumbuh bersama.
-              <div className="flex justify-end">
-                <ImQuotesRight className="text-red-800 text-3xl" />
-              </div>
-            </span>
-          </p>
+          {/* Teks kutipan */}
+          <div className="max-w-xl text-center lg:text-left pr-6">
+            <p className="font-bold text-red-800 text-2xl mt-4 text-center">
+              — Visi Raso Wong Kito —
+            </p>
+            <p className="text-xl font-semibold text-gray-700 text-justify">
+              <span>
+                <ImQuotesLeft className="text-red-800 text-2xl mb-6" />
+                Menghadirkan kuliner khas Palembang yang otentik, berkualitas,
+                sehat, dan penuh cinta. Raso Wong Kito lahir dari kepedulian
+                kami terhadap budaya lokal dan semangat untuk mengenalkannya ke
+                nusantara. Bukan sekadar usaha, ini adalah wujud cinta kami
+                untuk rasa, keluarga, dan masa depan yang tumbuh bersama.
+                <div className="flex justify-end">
+                  <ImQuotesRight className="text-red-800 text-3xl" />
+                </div>
+              </span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
     </>
   );
 }
@@ -166,7 +164,7 @@ function VisiSection() {
           <h1 className="text-3xl font-bold text-red-800 mb-4">
             — Misi Raso Wong Kito —
           </h1>
-          <p className="text-gray-600 text-lg mx-auto w-160">
+          <p className="text-gray-600 text-lg mx-auto max-w-2xl">
             Menjadi pelopor kuliner khas Palembang yang dikenal luas di seluruh
             Indonesia, membangun kebanggaan terhadap budaya lokal, serta
             menghadirkan cita rasa yang otentik sebagai simbol kehangatan,
