@@ -62,7 +62,7 @@ function ContactSection() {
                 <span className="mr-3">
                   <MdOutlineMail />
                 </span>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Raso_WongKito@gmail.com">
+                <a target="blank" href="https://mail.google.com/mail/?view=cm&fs=1&to=Raso_WongKito@gmail.com">
                   Raso_WongKito@gmail.com
                 </a>
               </li>
@@ -70,7 +70,7 @@ function ContactSection() {
                 <span className="mr-3">
                   <FaSquareFacebook />
                 </span>
-                <a href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#">
+                <a target="blank" href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#">
                   Raso WongKito
                 </a>
               </li>
