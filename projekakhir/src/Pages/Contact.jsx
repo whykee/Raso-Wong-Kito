@@ -1,9 +1,12 @@
-import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+
 import { MdOutlineMail } from "react-icons/md";
-import { FaSquareFacebook } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook } from "react-icons/fa";
+
+import React, { useState } from "react";
+import { db } from "../Firebase";
+import { collection, addDoc } from "firebase/firestore";
 
 function Contact() {
   return (
@@ -45,6 +48,34 @@ function HeroContact() {
 }
 
 function ContactSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subjek: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      // Simpan data ke Firestore
+      await addDoc(collection(db, "contacts"), formData);
+      alert("Pesan berhasil dikirim!");
+      setFormData({ name: "", email: "", subjek: "", message: "" }); // Reset form
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      alert("Terjadi kesalahan. Silakan coba lagi.");
+    }
+  };
+
   return (
     <>
       <section className="py-20 bg-white text-gray-800">
@@ -68,7 +99,7 @@ function ContactSection() {
               </li>
               <li className="flex items-center">
                 <span className="mr-3">
-                  <FaSquareFacebook />
+                  <FaFacebook />
                 </span>
                 <a href="https://www.facebook.com/aidil.saputra.315390?rdid=fTV5ddfwWah0ripV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CA7Shi3d7%2F#">
                   Raso WongKito
@@ -82,9 +113,9 @@ function ContactSection() {
               </li>
             </ul>
 
-            <div className="mt-6 -ml-2">
+            <div className="mt-6 ml-2">
               <img
-                src="/sosmed/qrwa2.png"
+                src="/qr.jpeg"
                 alt="QR Code"
                 className="w-50 rounded-md"
               />
@@ -92,31 +123,47 @@ function ContactSection() {
           </div>
 
           <div>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
                   type="text"
-                  placeholder="Nama"
+                  name="name"
+                  placeholder="Masukkan Nama"
                   className="p-3 w-full border border-gray-300 rounded bg-white text-gray-800 placeholder-gray-500"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
                 />
                 <input
                   type="email"
-                  placeholder="Email"
+                  name="email"
+                  placeholder="Masukkan Email @ "
                   className="p-3 w-full border border-gray-300 rounded bg-white text-gray-800 placeholder-gray-500"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
                 />
               </div>
               <input
                 type="text"
-                placeholder="Subjek"
+                name="subjek"
+                placeholder="Masukkan Subjek"
                 className="p-3 w-full border border-gray-300 rounded bg-white text-gray-800 placeholder-gray-500"
+                required
+                value={formData.subjek}
+                onChange={handleChange}
               />
               <textarea
+                name="message"
                 placeholder="Pesan Anda"
                 className="p-3 w-full h-32 border border-gray-300 rounded bg-white text-gray-800 placeholder-gray-500"
+                required
+                value={formData.message}
+                onChange={handleChange}
               ></textarea>
               <button
                 type="submit"
-                className="px-6 py-3 bg-red-700 text-white rounded-lg hover:bg-red-800 transition"
+                className="px-6 py-6 btn bg-red-800 text-white shadow-none rounded-2xl hover:bg-yellow-400 hover:text-black"
               >
                 Kirim Pesan
               </button>
@@ -131,21 +178,20 @@ function ContactSection() {
 function ContactSection2() {
   return (
     <>
-<section className="py-20 bg-white text-gray-800">
-  <div className="max-w-7xl mx-auto px-4 shadow-2xl">
-    <h2 className="text-3xl font-bold mb-6 text-gray-900">Lokasi Kami</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.4084537614845!2d104.73008487472961!3d-2.984031696992036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75ec487f021d%3A0x63054012aa39de4f!2sPOLITEKNIK%20NEGERI%20SRIWIJAYA%20(POLSRI)!5e0!3m2!1sid!2sid!4v1748577666084!5m2!1sid!2sid"
-      width="100%"
-      height="450"
-      allowFullScreen=""
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      className="rounded-lg shadow-lg"
-    ></iframe>
-  </div>
-</section>
-
+      <section className="py-20 bg-white text-gray-800">
+        <div className="max-w-7xl mx-auto px-4 shadow-2xl">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Lokasi Kami</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.4084537614845!2d104.73008487472961!3d-2.984031696992036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75ec487f021d%3A0x63054012aa39de4f!2sPOLITEKNIK%20NEGERI%20SRIWIJAYA%20(POLSRI)!5e0!3m2!1sid!2sid!4v1748577666084!5m2!1sid!2sid"
+            width="100%"
+            height="450"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="rounded-lg shadow-lg"
+          ></iframe>
+        </div>
+      </section>
     </>
   );
 }

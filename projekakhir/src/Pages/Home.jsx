@@ -38,7 +38,7 @@ function HeroSection() {
               hanya di sini!
             </p>
             <Link to="/kuliner">
-              <button className="btn bg-yellow-400 text-black shadow-none rounded-2xl hover:bg-red-800 hover:text-white">
+              <button className="btn bg-red-800 text-white shadow-none rounded-2xl hover:bg-yellow-400 hover:text-black">
                 Jelajahi Kuliner
                 <IoIosArrowForward />
               </button>
@@ -162,112 +162,69 @@ function Section4() {
       {/* Carousel wrapper */}
       <div className="carousel w-full max-w-5xl h-64 mx-auto rounded-lg shadow-lg">
         {/* Slide 1 */}
-        <div id="slide1" className="carousel-item relative w-full">
-          <img
-            src="/testimoni/1.png"
-            className="w-full h-64 object-cover rounded-lg"
-            alt="Slide 1"
-          />
+        <div id="slide1" tabIndex={0} className="carousel-item relative w-full">
+          <img src="/testimoni/1.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 1" />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <a
-              href="#slide4"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            <button onClick={() => document.getElementById("slide4").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❮
-            </a>
-            <a
-              href="#slide2"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            </button>
+            <button onClick={() => document.getElementById("slide2").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❯
-            </a>
+            </button>
           </div>
         </div>
 
         {/* Slide 2 */}
-        <div id="slide2" className="carousel-item relative w-full">
-          <img
-            src="/testimoni/2.png"
-            className="w-full h-64 object-cover rounded-lg"
-            alt="Slide 2"
-          />
+        <div id="slide2" tabIndex={0} className="carousel-item relative w-full">
+          <img src="/testimoni/2.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 2" />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <a
-              href="#slide1"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            <button onClick={() => document.getElementById("slide1").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❮
-            </a>
-            <a
-              href="#slide3"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            </button>
+            <button onClick={() => document.getElementById("slide3").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❯
-            </a>
+            </button>
           </div>
         </div>
 
         {/* Slide 3 */}
-        <div id="slide3" className="carousel-item relative w-full">
-          <img
-            src="/testimoni/3.png"
-            className="w-full h-64 object-cover rounded-lg"
-            alt="Slide 3"
-          />
+        <div id="slide3" tabIndex={0} className="carousel-item relative w-full">
+          <img src="/testimoni/3.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 3" />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <a
-              href="#slide2"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            <button onClick={() => document.getElementById("slide2").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❮
-            </a>
-            <a
-              href="#slide4"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            </button>
+            <button onClick={() => document.getElementById("slide4").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❯
-            </a>
+            </button>
           </div>
         </div>
 
         {/* Slide 4 */}
-        <div id="slide4" className="carousel-item relative w-full">
-          <img
-            src="/testimoni/4.png"
-            className="w-full h-64 object-cover rounded-lg"
-            alt="Slide 4"
-          />
+        <div id="slide4" tabIndex={0} className="carousel-item relative w-full">
+          <img src="/testimoni/4.png" className="w-full h-64 object-cover rounded-lg" alt="Slide 4" />
           <div className="absolute inset-y-1/2 left-2 right-2 flex justify-between transform -translate-y-1/2">
-            <a
-              href="#slide3"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            <button onClick={() => document.getElementById("slide3").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❮
-            </a>
-            <a
-              href="#slide1"
-              className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300"
-            >
+            </button>
+            <button onClick={() => document.getElementById("slide1").focus()} className="btn btn-sm btn-circle bg-white text-black hover:bg-gray-300">
               ❯
-            </a>
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Carousel navigation buttons */}
+      {/* Navigation */}
       <div className="flex w-full justify-center gap-2 py-4">
-        <a href="#slide1" className="btn btn-xs rounded-2xl">
-          1
-        </a>
-        <a href="#slide2" className="btn btn-xs rounded-2xl">
-          2
-        </a>
-        <a href="#slide3" className="btn btn-xs rounded-2xl">
-          3
-        </a>
-        <a href="#slide4" className="btn btn-xs rounded-2xl">
-          4
-        </a>
+        {[1, 2, 3, 4].map((n) => (
+          <button
+            key={n}
+            onClick={() => document.getElementById(`slide${n}`).focus()}
+            className="btn btn-xs rounded-2xl"
+          >
+            {n}
+          </button>
+        ))}
       </div>
     </div>
   );
